@@ -1,0 +1,64 @@
+
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author IICT (SWE)
+ */
+public class miltiThreading_1 implements Runnable{
+    String threadName = "";
+    synchronized public static void operatin(int add)
+    {
+        BigIntegerDemo.gov_var += add;
+    }
+
+    miltiThreading_1(String name) {
+        this.threadName = name;
+    }
+    @Override
+    public void run()
+    {
+        if(threadName.equalsIgnoreCase("one")){
+                operatin(5);
+            }
+            else{
+                operatin(-2);
+            }
+            System.out.println(BigIntegerDemo.gov_var);
+        for(int i=0; i<10; i++){
+            System.out.println("Started");
+            if(threadName.equalsIgnoreCase("one")){
+                operatin(1);
+            }
+            else{
+                operatin(-1);
+            }
+            System.out.println(BigIntegerDemo.gov_var);
+        }
+    }
+}
+///main
+// Java program to demonstrate working of extended 
+// Euclidean Algorithm 
+
+
+public class BigIntegerDemo {
+public static int gov_var = 12;
+   public static void main(String args[]) throws InterruptedException
+    {
+        miltiThreading_1 t1 = new miltiThreading_1("one");
+        miltiThreading_1 t2 = new miltiThreading_1("two");
+        Thread th1 = new Thread(t1);
+        th1.start();
+        Thread th2 = new Thread(t2);
+        th2.start();
+        
+    }
+}
