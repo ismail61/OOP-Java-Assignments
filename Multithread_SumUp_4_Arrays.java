@@ -5,8 +5,6 @@ package Multithreading;
  * lastly, 2 summed up arrays are summed up
  * Used Interface(Implements Runnable)
  * 
- * @author Pulock Das Kamol
- * Reg No:2017831046
  * 
  */
 
