@@ -10,18 +10,10 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
-
-//package javaapplication7;
-
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
-import java.util.ArrayList;
  
 public class Each_word_AND_Unique_word_AND_Total_word_count {
     public static void main(String[] args) {
-        countword("C:/Users/IICT (SWE)/Desktop/hii.txt");
+        countword("C:/Users/user/Desktop/hi.txt");
     }
 
     public static void countword(String Name) {
