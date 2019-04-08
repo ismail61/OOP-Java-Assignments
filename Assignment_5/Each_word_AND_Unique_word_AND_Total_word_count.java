@@ -3,7 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package javaapplication7;
+package javaapplication1.class1;
+
+/**
+ *
+ * @author Ismail hosen raj
+ */
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
