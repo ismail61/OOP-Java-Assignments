@@ -7,7 +7,7 @@ package calcu;
 
 /**
  *
- * @author user
+ * @author MD:Ismail Hosen Raj
  */
 public class cal extends javax.swing.JFrame {
 
